@@ -31,9 +31,7 @@
 </pre>
 -->
 
-<pre align="center">
 ![terminal art](./profile-art.svg)
-</pre>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com/?user=rootHytx&theme=dark&hide_border=true&background=0D1117&stroke=e79cfe&ring=e79cfe&fire=e79cfe&currStreakLabel=e79cfe&sideNums=FFFFFF&currStreakNum=FFFFFF&sideLabels=888888&dates=888888" height="150" />
