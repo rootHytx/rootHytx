@@ -9,7 +9,7 @@
 
 <!-- TYPING_SVG_START -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1200&color=00FF41&center=true&vCenter=true&width=600&lines=$+whoami;hytx+%7C+sysadmin+%7C+security+engineer;cat+~%2F.motd;Hardening+infra.+Breaking+things.;$+cat+~%2F.quotes+%7C+shuf+-n+1;Security+is+a+process%2C+not+a+product.;Trust%2C+but+verify.;There+is+no+cloud%2C+just+someone+else%27s+computer.;Passwords+are+like+underwear%3A+don%27t+share+them.;It%27s+not+a+bug%2C+it%27s+an+undocumented+feature.;Everything+is+a+file." alt="Terminal Typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1200&color=00FF41&center=true&vCenter=true&width=600&lines=It%27s%20not%20a%20bug%2C%20it%27s%20an%20undocumented%20feature.;Everything%20is%20a%20file.;NixOS%20btw;When%20you%20delete%20something%2C%20you%27re%20making%20a%20choice%20to%20destroy%20it.%20To%20never%20see%20it%20again.;Maybe%20wars%20aren%27t%20meant%20to%20be%20won%2C%20maybe%20they%27re%20meant%20to%20be%20continuous.;Never%20trust%20a%20tech%20guy%20with%20a%20rat%20tail%E2%80%94too%20easy%20to%20carve%20secrets%20out%20of%20him.;How%20do%20I%20take%20off%20a%20mask%20when%20it%20stops%20being%20a%20mask%3F%20When%20it%27s%20as%20much%20a%20part%20of%20me%20as%20I%20am.;Life%20is%20so%20much%20easier%20when%20you%27re%20numb.;We%27re%20all%20living%20in%20each%20other%27s%20paranoia.;It%27s%20the%20basic%20condition%20of%20life%20to%20be%20required%20to%20violate%20our%20own%20identity.;My%20schedule%20for%20today%20lists%20a%20six-hour%20self-accusatory%20depression;That%27s%20because%20you%27re%20a%20highly%20moral%20person.%20I%27m%20not.%20I%20don%27t%20judge%2C%20not%20even%20myself." alt="Terminal Typing" />
 </p>
 <!-- TYPING_SVG_END -->
 
@@ -58,12 +58,12 @@ $ top -o commits -n 6
 <!-- MOST_ACTIVE_REPOS_START -->
 | # | Repository | ⭐ | Activity |
 |---|-----------|------|----------|
-| 1 | [repo-name](https://github.com/rootHytx/repo-name) | ★ - | just now |
-| 2 | [repo-name](https://github.com/rootHytx/repo-name) | ★ - | just now |
-| 3 | [repo-name](https://github.com/rootHytx/repo-name) | ★ - | just now |
-| 4 | [repo-name](https://github.com/rootHytx/repo-name) | ★ - | just now |
-| 5 | [repo-name](https://github.com/rootHytx/repo-name) | ★ - | just now |
-| 6 | [repo-name](https://github.com/rootHytx/repo-name) | ★ - | just now |
+| 1 | [ctfd-stress-tester](https://github.com/rootHytx/ctfd-stress-tester) | ★ 0 | 14 days ago |
+| 2 | [NervCTF](https://github.com/rootHytx/NervCTF) | ★ 3 | 14 days ago |
+| 3 | [wlr-randr-tui](https://github.com/rootHytx/wlr-randr-tui) | ★ 0 | 19 days ago |
+| 4 | [rootHytx.github.io](https://github.com/rootHytx/rootHytx.github.io) | ★ 0 | 1 months ago |
+| 5 | [bloccChainz](https://github.com/rootHytx/bloccChainz) | ★ 0 | 11 months ago |
+| 6 | [sistemas-embutidos](https://github.com/rootHytx/sistemas-embutidos) | ★ 0 | 2 years ago |
 <!-- MOST_ACTIVE_REPOS_END -->
 
 ```console
