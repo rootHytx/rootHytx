@@ -78,7 +78,7 @@ def build_typing_svg(quotes: list[str]) -> str:
         "&size=14"
         "&duration=3000"
         "&pause=1500"
-        "&color=00FF41"
+        "&color=e79cfe"
         "&center=true"
         "&vCenter=true"
         "&width=800"
