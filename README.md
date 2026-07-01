@@ -36,7 +36,7 @@ $ uptime
 
 <p align="left">
   <img src="https://github-readme-stats.vercel.app/api?username=rootHytx&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=FFFFFF&hide_title=true&hide=issues,contribs" height="150" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=rootHytx&theme=dark&hide_border=true&background=0D1117&stroke=00FF41&ring=00FF41&fire=00FF41&currStreakLabel=00FF41&sideNums=FFFFFF&currStreakNum=FFFFFF&sideLabels=888888&dates=888888" height="150" />
+  <img src="https://streak-stats.demolab.com/?user=rootHytx&theme=dark&hide_border=true&background=0D1117&stroke=00FF41&ring=00FF41&fire=00FF41&currStreakLabel=00FF41&sideNums=FFFFFF&currStreakNum=FFFFFF&sideLabels=888888&dates=888888" height="150" />
 </p>
 
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=rootHytx&theme=react-dark&bg_color=0D1117&color=00FF41&line=00FF41&point=FFFFFF&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
