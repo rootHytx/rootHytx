@@ -7,9 +7,11 @@
   ╚══════════════════════════════════════════════════════════════╝
 -->
 
+<!-- TYPING_SVG_START -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3000&pause=1000&color=00FF41&center=true&vCenter=true&width=500&lines=$+whoami;hytx+%7C+sysadmin+%7C+security+engineer;cat+~%2F.motd;Hardening+infra.+Breaking+things.;Log+everything.+Trust+nothing." alt="Terminal Typing" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=3000&pause=1200&color=00FF41&center=true&vCenter=true&width=600&lines=$+whoami;hytx+%7C+sysadmin+%7C+security+engineer;cat+~%2F.motd;Hardening+infra.+Breaking+things.;$+cat+~%2F.quotes+%7C+shuf+-n+1;Security+is+a+process%2C+not+a+product.;Trust%2C+but+verify.;There+is+no+cloud%2C+just+someone+else%27s+computer.;Passwords+are+like+underwear%3A+don%27t+share+them.;It%27s+not+a+bug%2C+it%27s+an+undocumented+feature.;Everything+is+a+file." alt="Terminal Typing" />
 </p>
+<!-- TYPING_SVG_END -->
 
 <pre align="center">
 ╔══════════════════════════════════════════════════════════════╗

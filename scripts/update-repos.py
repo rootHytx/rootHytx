@@ -1,21 +1,28 @@
 #!/usr/bin/env python3
 """
-Fetch most active repos and update README.md's dynamic block.
-Sorted by most recently pushed.
+Update README.md with:
+  1. Most active repos (from GitHub API)
+  2. Typing SVG animation (from quotes.txt)
 """
 
 import os
 import re
 import requests
 from datetime import datetime, timezone
+from urllib.parse import quote
 
 USERNAME = os.environ["GITHUB_USERNAME"]
 TOKEN = os.environ["GITHUB_TOKEN"]
 README_PATH = "README.md"
+QUOTES_PATH = "quotes.txt"
 
-START_MARKER = "<!-- MOST_ACTIVE_REPOS_START -->"
-END_MARKER = "<!-- MOST_ACTIVE_REPOS_END -->"
+REPOS_START = "<!-- MOST_ACTIVE_REPOS_START -->"
+REPOS_END = "<!-- MOST_ACTIVE_REPOS_END -->"
+SVG_START = "<!-- TYPING_SVG_START -->"
+SVG_END = "<!-- TYPING_SVG_END -->"
 
+
+# ── repos ──────────────────────────────────────────────────────
 
 def fetch_repos(username: str, token: str) -> list[dict]:
     url = f"https://api.github.com/users/{username}/repos?per_page=100&sort=pushed&direction=desc&type=owner"
@@ -23,8 +30,6 @@ def fetch_repos(username: str, token: str) -> list[dict]:
     resp = requests.get(url, headers=headers)
     resp.raise_for_status()
     repos = resp.json()
-
-    # Exclude the profile README repo itself
     return [r for r in repos if r["name"] != username and not r["fork"]]
 
 
@@ -48,36 +53,80 @@ def build_table(repos: list[dict], count: int = 6) -> str:
             ago = f"{delta.days // 30} months ago"
         else:
             ago = f"{delta.days // 365} years ago"
-
         lines.append(f"| {i} | [{name}]({url}) | ★ {stars} | {ago} |")
-
     return "\n".join(lines)
 
 
-def update_readme(new_table: str) -> None:
+# ── quotes / typing SVG ────────────────────────────────────────
+
+def read_quotes(path: str) -> list[str]:
+    """Read quotes.txt — one phrase per line, blanks and comments skipped."""
+    with open(path, "r") as f:
+        return [
+            line.strip()
+            for line in f
+            if line.strip() and not line.strip().startswith("#")
+        ]
+
+
+def build_typing_svg(quotes: list[str]) -> str:
+    """Build the readme-typing-svg img tag from a list of plain-text quotes."""
+    encoded = ";".join(quote(q) for q in quotes)
+    url = (
+        "https://readme-typing-svg.demolab.com"
+        "?font=Fira+Code"
+        "&size=16"
+        "&duration=3000"
+        "&pause=1200"
+        "&color=00FF41"
+        "&center=true"
+        "&vCenter=true"
+        "&width=600"
+        f"&lines={encoded}"
+    )
+    return (
+        '<p align="center">\n'
+        f'  <img src="{url}" alt="Terminal Typing" />\n'
+        '</p>'
+    )
+
+
+# ── readme patching ────────────────────────────────────────────
+
+def replace_between(content: str, start_marker: str, end_marker: str, replacement: str) -> str:
+    pattern = re.compile(
+        f"{re.escape(start_marker)}.*?{re.escape(end_marker)}",
+        re.DOTALL,
+    )
+    if not pattern.search(content):
+        raise SystemExit(f"Markers {start_marker} … {end_marker} not found in {README_PATH}")
+    return pattern.sub(f"{start_marker}\n{replacement}\n{end_marker}", content)
+
+
+def update_readme(repos_table: str, typing_svg: str) -> None:
     with open(README_PATH, "r") as f:
         content = f.read()
 
-    pattern = re.compile(
-        f"{re.escape(START_MARKER)}.*?{re.escape(END_MARKER)}",
-        re.DOTALL,
-    )
-    replacement = f"{START_MARKER}\n{new_table}\n{END_MARKER}"
-
-    if not pattern.search(content):
-        raise SystemExit(f"Markers not found in {README_PATH}")
-
-    new_content = pattern.sub(replacement, content)
+    content = replace_between(content, REPOS_START, REPOS_END, repos_table)
+    content = replace_between(content, SVG_START, SVG_END, typing_svg)
 
     with open(README_PATH, "w") as f:
-        f.write(new_content)
+        f.write(content)
 
-    print(f"Updated {README_PATH} with top {new_table.count(chr(10)) - 2} repos.")
+    print(f"✅ Updated {README_PATH}")
 
+
+# ── main ───────────────────────────────────────────────────────
 
 if __name__ == "__main__":
     repos = fetch_repos(USERNAME, TOKEN)
     if not repos:
         raise SystemExit("No repos found — check your token permissions.")
     table = build_table(repos)
-    update_readme(table)
+
+    quotes = read_quotes(QUOTES_PATH)
+    if not quotes:
+        raise SystemExit(f"No quotes found in {QUOTES_PATH}")
+    svg = build_typing_svg(quotes)
+
+    update_readme(table, svg)
