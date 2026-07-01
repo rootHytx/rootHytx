@@ -4,7 +4,9 @@ on:
   push:
     branches: [main]
     paths:
-      - "quotes.txt" # Only run when quotes change
+      - "quotes.txt"
+      - "scripts/**"
+      - ".github/workflows/update-readme.yml"
   schedule:
     - cron: "0 */6 * * *" # Repo table refresh every 6 hours
   workflow_dispatch: # Manual trigger from the Actions tab
