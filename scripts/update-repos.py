@@ -75,13 +75,13 @@ def build_typing_svg(quotes: list[str]) -> str:
     url = (
         "https://readme-typing-svg.demolab.com"
         "?font=Fira+Code"
-        "&size=16"
+        "&size=14"
         "&duration=3000"
-        "&pause=1200"
+        "&pause=1500"
         "&color=00FF41"
         "&center=true"
         "&vCenter=true"
-        "&width=600"
+        "&width=800"
         f"&lines={encoded}"
     )
     return (
