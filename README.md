@@ -35,7 +35,7 @@ $ uptime
 ```
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=rootHytx&show_icons=true&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF41&icon_color=00FF41&text_color=FFFFFF&hide_title=true&hide=issues,contribs" height="150" />
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=rootHytx&theme=dark&hide_border=true&bg_color=0D1117&title_color=00FF41&text_color=FFFFFF&layout=compact" height="150" />
   <img src="https://streak-stats.demolab.com/?user=rootHytx&theme=dark&hide_border=true&background=0D1117&stroke=00FF41&ring=00FF41&fire=00FF41&currStreakLabel=00FF41&sideNums=FFFFFF&currStreakNum=FFFFFF&sideLabels=888888&dates=888888" height="150" />
 </p>
 
