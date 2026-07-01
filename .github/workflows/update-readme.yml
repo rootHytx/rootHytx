@@ -1,15 +1,19 @@
 name: Update Most Active Repos
 
 on:
+  push:
+    branches: [main]
+    paths:
+      - "quotes.txt" # Only run when quotes change
   schedule:
-    - cron: "0 */6 * * *"          # Every 6 hours
-  workflow_dispatch:                # Manual trigger from the Actions tab
+    - cron: "0 */6 * * *" # Repo table refresh every 6 hours
+  workflow_dispatch: # Manual trigger from the Actions tab
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write               # Needed to push the updated README
+      contents: write # Needed to push the updated README
 
     steps:
       - name: Checkout

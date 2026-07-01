@@ -1,15 +1,12 @@
-$ whoami
-hytx | sysadmin | cybersecurity
-$ cat ~/.quotes | shuf -n 1
 It's not a bug, it's an undocumented feature.
 Everything is a file.
 NixOS btw
-When you delete something, you’re making a choice to destroy it. To never see it again.
+When you delete something, you're making a choice to destroy it. To never see it again.
 Maybe wars aren't meant to be won, maybe they're meant to be continuous.
 Never trust a tech guy with a rat tail—too easy to carve secrets out of him.
 How do I take off a mask when it stops being a mask? When it's as much a part of me as I am.
-Life is so much easier when you’re numb.
-We’re all living in each other’s paranoia.
+Life is so much easier when you're numb.
+We're all living in each other's paranoia.
 It's the basic condition of life to be required to violate our own identity.
 My schedule for today lists a six-hour self-accusatory depression
-That’s because you’re a highly moral person. I’m not. I don’t judge, not even myself.
+That's because you're a highly moral person. I'm not. I don't judge, not even myself.
