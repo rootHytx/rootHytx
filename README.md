@@ -32,41 +32,6 @@
 ---
 
 ```console
-$ cat ~/about.txt
-```
-
-| | |
-|---|---|
-| **📍 Location** | [City, Country] |
-| **🖥️ Daily driver** | [Your distro] |
-| **🔐 Focus** | Infrastructure hardening, threat detection, IR |
-| **📡 Homelab** | [Your setup] |
-| **📜 Certs** | [Your certs] |
-
-```console
-$ cat ~/.toolbox
-```
-
-`ansible` `terraform` `kubernetes` `docker` `prometheus` `grafana` `wazuh` `suricata` `falco` `vault` `opensearch` `proxmox` `wireguard` `python` `bash` `go`
-
----
-
-```console
-$ top -o commits -n 6
-```
-
-<!-- MOST_ACTIVE_REPOS_START -->
-| # | Repository | ⭐ | Activity |
-|---|-----------|------|----------|
-| 1 | [ctfd-stress-tester](https://github.com/rootHytx/ctfd-stress-tester) | ★ 0 | 14 days ago |
-| 2 | [NervCTF](https://github.com/rootHytx/NervCTF) | ★ 3 | 14 days ago |
-| 3 | [wlr-randr-tui](https://github.com/rootHytx/wlr-randr-tui) | ★ 0 | 19 days ago |
-| 4 | [rootHytx.github.io](https://github.com/rootHytx/rootHytx.github.io) | ★ 0 | 1 months ago |
-| 5 | [bloccChainz](https://github.com/rootHytx/bloccChainz) | ★ 0 | 11 months ago |
-| 6 | [sistemas-embutidos](https://github.com/rootHytx/sistemas-embutidos) | ★ 0 | 2 years ago |
-<!-- MOST_ACTIVE_REPOS_END -->
-
-```console
 $ uptime
 ```
 
@@ -78,12 +43,6 @@ $ uptime
 [![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=rootHytx&theme=react-dark&bg_color=0D1117&color=00FF41&line=00FF41&point=FFFFFF&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 ---
-
-<p align="center">
-  <samp>
-    <i>"Amateurs hack systems. Professionals hack people."</i> — Bruce Schneier
-  </samp>
-</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=rootHytx&color=00FF41&style=flat&label=visitors" />
