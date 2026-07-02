@@ -99,7 +99,8 @@ def replace_between(content: str, start_marker: str, end_marker: str, replacemen
         re.DOTALL,
     )
     if not pattern.search(content):
-        raise SystemExit(f"Markers {start_marker} … {end_marker} not found in {README_PATH}")
+        print(f"⚠ Skipping repo table — markers not found in {README_PATH}")
+        return content
     return pattern.sub(f"{start_marker}\n{replacement}\n{end_marker}", content)
 
 
@@ -120,9 +121,7 @@ def update_readme(repos_table: str, typing_svg: str) -> None:
 
 if __name__ == "__main__":
     repos = fetch_repos(USERNAME, TOKEN)
-    if not repos:
-        raise SystemExit("No repos found — check your token permissions.")
-    table = build_table(repos)
+    table = build_table(repos) if repos else ""
 
     quotes = read_quotes(QUOTES_PATH)
     if not quotes:
